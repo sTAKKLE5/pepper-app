@@ -2,7 +2,7 @@ version: '3'
 services:
   postgres:
     build: ./postgres
-    image: kraken-pepper
-    container_name: kraken-pepper
+    image: pepper-app
+    container_name: pepper-app
     ports:
       - "5432:5432"

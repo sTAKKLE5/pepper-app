@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Build the Docker image
-docker build -t kraken-pepper .
+docker build -t pepper-app .

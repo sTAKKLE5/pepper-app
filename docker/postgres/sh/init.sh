@@ -1,1 +1,1 @@
-psql -U kraken-pepper -d kraken-pepper -a -f /data/tables.sql
+psql -U pepper-app -d pepper-app -a -f /data/tables.sql

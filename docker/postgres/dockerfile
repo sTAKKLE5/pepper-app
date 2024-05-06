@@ -2,9 +2,9 @@
 FROM postgres:latest
 
 # Set environment variables
-ENV POSTGRES_USER kraken-pepper
-ENV POSTGRES_PASSWORD kraken-pepper
-ENV POSTGRES_DB kraken-pepper
+ENV POSTGRES_USER pepper-app
+ENV POSTGRES_PASSWORD pepper-app
+ENV POSTGRES_DB pepper-app
 
 # add sql files into container
 ADD sql/tables.sql /data/tables.sql
