@@ -1,0 +1,16 @@
+# Use the official Docker Hub Postgres image
+FROM postgres:latest
+
+# Set environment variables
+ENV POSTGRES_USER kraken-pepper
+ENV POSTGRES_PASSWORD kraken-pepper
+ENV POSTGRES_DB kraken-pepper
+
+# add sql files into container
+ADD sql/tables.sql /data/tables.sql
+
+# add init.sh script into container
+COPY sh/init.sh /docker-entrypoint-initdb.d/init.sh
+
+# Expose the PostgreSQL port
+EXPOSE 5432
